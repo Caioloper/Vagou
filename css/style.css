@@ -1249,3 +1249,670 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ========================================
+   PÁGINA DE RESULTADOS E DETALHES
+======================================== */
+
+.pagina-resultados .site-header {
+    position: relative;
+}
+
+.pagina-resultados .resultados-section {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+/* ========================================
+   RESULTADOS E DETALHES DAS VAGAS
+======================================== */
+
+.pagina-resultados .resultados-section {
+    background: #f7f9f8;
+    min-height: 100vh;
+    padding: 4rem 0 5rem;
+}
+
+.pagina-resultados .resultados-header {
+    margin-bottom: 2rem;
+}
+
+.pagina-resultados .section-tag {
+    display: inline-block;
+    color: #84cc16;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.8rem;
+}
+
+.pagina-resultados .resultados-header h1 {
+    color: #0b1f35;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.pagina-resultados .resultados-header p {
+    color: #61707c;
+    font-size: 1rem;
+}
+
+.pagina-resultados .busca-vagas {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    gap: 1rem;
+    align-items: end;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(11, 31, 53, 0.08);
+    margin-bottom: 3rem;
+}
+
+.pagina-resultados .campo-busca {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pagina-resultados .campo-busca label {
+    color: #0b1f35;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.pagina-resultados .campo-busca input {
+    width: 100%;
+    min-height: 46px;
+    padding: 0.7rem;
+    border: 1px solid #dce4e3;
+    border-radius: 9px;
+    font-family: inherit;
+}
+
+.pagina-resultados .btn-buscar {
+    min-height: 46px;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 9px;
+    background: #0b1f35;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pagina-resultados .btn-buscar:hover {
+    background: #005c75;
+}
+
+.pagina-resultados .resultados-titulo {
+    margin-bottom: 1.5rem;
+}
+
+.pagina-resultados .resultados-titulo h2 {
+    color: #0b1f35;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.pagina-resultados .resultados-titulo p {
+    color: #61707c;
+}
+
+.pagina-resultados .resultados-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 1.5rem;
+}
+
+.pagina-resultados .lista-vagas,
+.pagina-resultados .mapa-vagas {
+    background: #ffffff;
+    border-radius: 16px;
+    min-height: 350px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 20px rgba(11, 31, 53, 0.06);
+}
+
+.pagina-resultados .mapa-vagas.pagina-resultados .mapa-vagas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf0ed;
+    border-radius: 16px;
+    min-height: 350px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(11, 31, 53, 0.06);
+}
+
+.pagina-resultados .mapa-vagas img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .pagina-resultados .busca-vagas {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-resultados .resultados-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-resultados .resultados-section {
+        padding: 2rem 0;
+    }
+}
+
+/* CARDS DE VAGAS */
+
+.pagina-resultados .lista-vagas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.pagina-resultados .vaga-card {
+    overflow: hidden;
+    border: 1px solid #dce4e3;
+    border-radius: 14px;
+    background: #fff;
+}
+
+.pagina-resultados .vaga-foto {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pagina-resultados .foto-vaga-1 {
+    background: linear-gradient(135deg, #dce9df, #a8c6b1);
+}
+
+.pagina-resultados .foto-vaga-2 {
+    background: linear-gradient(135deg, #dce5ed, #a8bdcf);
+}
+
+.pagina-resultados .vaga-icone {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0b1f35;
+}
+
+.pagina-resultados .vaga-status {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #84cc16;
+    color: #10232a;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.pagina-resultados .vaga-info {
+    padding: 1.2rem;
+}
+
+.pagina-resultados .vaga-topo,
+.pagina-resultados .vaga-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.pagina-resultados .vaga-topo h3 {
+    color: #0b1f35;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.pagina-resultados .vaga-avaliacao {
+    color: #a16b00;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.pagina-resultados .vaga-endereco,
+.pagina-resultados .vaga-regra {
+    color: #61707c;
+    font-size: 0.85rem;
+    margin: 0.5rem 0;
+}
+
+.pagina-resultados .vaga-detalhes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    color: #0b1f35;
+    font-size: 0.82rem;
+    margin: 1rem 0;
+}
+
+.pagina-resultados .vaga-rodape {
+    border-top: 1px solid #dce4e3;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.pagina-resultados .vaga-rodape strong {
+    color: #0b1f35;
+    font-size: 1.3rem;
+}
+
+.pagina-resultados .vaga-rodape small {
+    color: #61707c;
+}
+
+.pagina-resultados .btn-detalhes {
+    background: #0b1f35;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pagina-resultados .btn-detalhes:hover {
+    background: #005c75;
+}
+
+/* DETALHES DA VAGA */
+
+.pagina-resultados .detalhes-vaga {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.pagina-resultados .detalhes-cabecalho {
+    margin-bottom: 1.5rem;
+}
+
+.pagina-resultados .detalhes-cabecalho h2 {
+    color: #0b1f35;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.pagina-resultados .detalhes-cabecalho p {
+    color: #61707c;
+}
+
+.pagina-resultados .detalhes-card {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #dce4e3;
+    box-shadow: 0 8px 30px rgba(11,31,53,.08);
+}
+
+.pagina-resultados .detalhes-imagem {
+    min-height: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(145deg, #0b1f35, #005c75);
+    background-image:
+    linear-gradient(rgba(11, 31, 53, 0.65), rgba(0, 92, 117, 0.75)),
+    url("../assets/images/estacionamento-aereo.webp");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+    color: white;
+    
+}
+
+.pagina-resultados .detalhes-imagem span {
+    background: #84cc16;
+    color: #10232a;
+    padding: 8px 14px;
+    border-radius: 20px;
+    width: fit-content;
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+.pagina-resultados .detalhes-imagem strong {
+    font-size: 1.8rem;
+    max-width: 300px;
+}
+
+.pagina-resultados .detalhes-informacoes {
+    padding: 2rem;
+}
+
+.pagina-resultados .detalhes-titulo {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.pagina-resultados .detalhes-titulo h3 {
+    color: #0b1f35;
+    font-size: 1.4rem;
+}
+
+.pagina-resultados .detalhes-titulo p,
+.pagina-resultados .detalhes-informacoes p {
+    color: #61707c;
+}
+
+.pagina-resultados .detalhes-nota {
+    color: #a16b00;
+    font-weight: 700;
+}
+
+.pagina-resultados .detalhes-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    border-block: 1px solid #dce4e3;
+}
+
+.pagina-resultados .detalhes-caracteristicas div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pagina-resultados .detalhes-caracteristicas strong {
+    color: #0b1f35;
+    font-size: .9rem;
+}
+
+.pagina-resultados .detalhes-caracteristicas small,
+.pagina-resultados .detalhes-preco small {
+    color: #61707c;
+    font-size: .75rem;
+}
+
+.pagina-resultados .detalhes-informacoes h4 {
+    color: #0b1f35;
+    margin: 1.2rem 0 .5rem;
+}
+
+.pagina-resultados .detalhes-informacoes ul {
+    padding-left: 1.2rem;
+    color: #61707c;
+    font-size: .9rem;
+}
+
+.pagina-resultados .detalhes-preco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid #dce4e3;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.pagina-resultados .detalhes-preco div {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagina-resultados .detalhes-preco strong {
+    color: #0b1f35;
+    font-size: 1.6rem;
+}
+
+.pagina-resultados .btn-reservar {
+    background: #84cc16;
+    color: #10232a;
+    border: none;
+    border-radius: 9px;
+    padding: .9rem 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.pagina-resultados .btn-reservar:hover {
+    background: #65a30d;
+}
+
+@media (max-width: 768px) {
+    .pagina-resultados .detalhes-card {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-resultados .detalhes-imagem {
+        min-height: 220px;
+    }
+
+    .pagina-resultados .detalhes-caracteristicas {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =================================
+   CADASTRO DO PROPRIETÁRIO
+================================= */
+
+.pagina-cadastro {
+    background: #f7f9f8;
+    color: #0b1f35;
+}
+
+.cadastro-header {
+    background: #ffffff;
+    border-bottom: 1px solid #dce4e3;
+    padding: 1rem 5%;
+}
+
+.cadastro-nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cadastro-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0b1f35;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.cadastro-logo img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.voltar-inicio {
+    color: #0b1f35;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cadastro-main {
+    max-width: 850px;
+    margin: auto;
+    padding: 3rem 1.5rem;
+}
+
+.cadastro-intro {
+    margin-bottom: 2rem;
+}
+
+.cadastro-intro h1 {
+    font-size: 2.3rem;
+    margin: 0.7rem 0;
+    color: #0b1f35;
+}
+
+.cadastro-intro p,
+.formulario-titulo p {
+    color: #61707c;
+}
+
+.formulario-vaga {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 18px;
+    border: 1px solid #dce4e3;
+    box-shadow: 0 8px 25px rgba(11,31,53,.06);
+}
+
+.formulario-titulo {
+    margin-bottom: 1.5rem;
+}
+
+.formulario-titulo h2 {
+    font-size: 1.35rem;
+    margin-bottom: .4rem;
+}
+
+.formulario-titulo p {
+    font-size: .9rem;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 1.3rem;
+    flex: 1;
+}
+
+.campo-grupo label {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.campo-grupo input,
+.campo-grupo select,
+.campo-grupo textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce4e3;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: .9rem;
+    color: #0b1f35;
+    background: white;
+    box-sizing: border-box;
+}
+
+.campo-grupo input:focus,
+.campo-grupo select:focus,
+.campo-grupo textarea:focus {
+    outline: 2px solid #84cc16;
+    border-color: #84cc16;
+}
+
+.campo-duplo {
+    display: flex;
+    gap: 18px;
+}
+
+.upload-fotos {
+    min-height: 130px;
+    border: 2px dashed #b9c9c3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    background: #f7f9f8;
+}
+
+.upload-fotos span {
+    font-size: 2rem;
+    color: #84cc16;
+}
+
+.upload-fotos small {
+    color: #61707c;
+}
+
+#fotos {
+    border: none;
+    padding: 8px 0;
+}
+
+.formulario-divisor {
+    border-top: 1px solid #dce4e3;
+    margin: 2rem 0;
+}
+
+.formulario-acoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 2rem;
+}
+
+.formulario-acoes button {
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-limpar {
+    background: white;
+    border: 1px solid #dce4e3;
+    color: #0b1f35;
+}
+
+.btn-cadastrar {
+    background: #84cc16;
+    border: none;
+    color: #10232a;
+}
+
+.btn-cadastrar:hover {
+    background: #72b50d;
+}
+
+@media (max-width: 600px) {
+    .cadastro-main {
+        padding: 2rem 1rem;
+    }
+
+    .formulario-vaga {
+        padding: 1.3rem;
+    }
+
+    .campo-duplo {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .formulario-acoes {
+        flex-direction: column;
+    }
+
+    .formulario-acoes button {
+        width: 100%;
+    }
+}

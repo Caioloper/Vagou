@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagou | Cadastrar minha vaga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagina-cadastro">
+
+    <header class="cadastro-header">
+        <div class="cadastro-nav">
+            <a href="index.html" class="cadastro-logo">
+                <img src="assets/images/vagou-logo-simbolo.png" alt="Vagou">
+                <strong>Vagou</strong>
+            </a>
+
+            <a href="index.html" class="voltar-inicio">Voltar ao início</a>
+        </div>
+    </header>
+
+    <main class="cadastro-main">
+
+        <section class="cadastro-intro">
+            <span class="section-tag">SEJA UM PARCEIRO VAGOU</span>
+            <h1>Disponibilize sua vaga!</h1>
+            <p>
+                Transforme seu espaço livre em uma oportunidade.
+                Cadastre sua vaga e comece a receber reservas.
+            </p>
+        </section>
+
+        <form class="formulario-vaga">
+
+            <div class="formulario-titulo">
+                <h2>Informações da vaga</h2>
+                <p>Preencha os dados do seu estacionamento.</p>
+            </div>
+
+            <div class="campo-grupo">
+                <label for="nome">Nome da vaga ou estacionamento</label>
+                <input type="text" id="nome" placeholder="Ex: Garagem Particular" required>
+            </div>
+
+            <div class="campo-grupo">
+                <label for="endereco">Endereço completo</label>
+                <input type="text" id="endereco" placeholder="Rua, número e complemento" required>
+            </div>
+
+            <div class="campo-duplo">
+                <div class="campo-grupo">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" placeholder="Ex: Pinheiros" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="cidade">Cidade / Estado</label>
+                    <input type="text" id="cidade" placeholder="São Paulo - SP" required>
+                </div>
+            </div>
+
+            <div class="campo-grupo">
+                <label for="tipo">Tipo de vaga</label>
+                <select id="tipo" required>
+                    <option value="">Selecione uma opção</option>
+                    <option>Vaga coberta</option>
+                    <option>Vaga descoberta</option>
+                    <option>Garagem fechada</option>
+                </select>
+            </div>
+
+            <div class="campo-grupo">
+                <label>Fotos do espaço</label>
+                <label for="fotos" class="upload-fotos">
+                    <span>＋</span>
+                    <strong>Adicionar fotos da vaga</strong>
+                    <small>Envie imagens para apresentar seu espaço.</small>
+                </label>
+                <input type="file" id="fotos" accept="image/*" multiple>
+            </div>
+
+            <div class="formulario-divisor"></div>
+
+            <div class="formulario-titulo">
+                <h2>Preço e disponibilidade</h2>
+                <p>Defina as condições para disponibilizar sua vaga.</p>
+            </div>
+
+            <div class="campo-duplo">
+                <div class="campo-grupo">
+                    <label for="preco">Valor por hora (R$)</label>
+                    <input type="number" id="preco" placeholder="Ex: 12,00" min="0" step="0.01" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="disponibilidade">Disponibilidade</label>
+                    <select id="disponibilidade" required>
+                        <option value="">Selecione</option>
+                        <option>Todos os dias</option>
+                        <option>Segunda a sexta</option>
+                        <option>Finais de semana</option>
+                        <option>Horários específicos</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="campo-duplo">
+                <div class="campo-grupo">
+                    <label for="inicio">Horário inicial</label>
+                    <input type="time" id="inicio">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="fim">Horário final</label>
+                    <input type="time" id="fim">
+                </div>
+            </div>
+
+            <div class="campo-grupo">
+                <label for="descricao">Descrição da vaga</label>
+                <textarea id="descricao" rows="4"
+                    placeholder="Conte um pouco sobre seu espaço, acesso e segurança..."></textarea>
+            </div>
+
+            <div class="campo-grupo">
+                <label for="regras">Regras de utilização</label>
+                <textarea id="regras" rows="3"
+                    placeholder="Informe regras importantes para os motoristas."></textarea>
+            </div>
+
+            <div class="formulario-acoes">
+                <button type="reset" class="btn-limpar">Limpar formulário</button>
+                <button type="submit" class="btn-cadastrar">Cadastrar minha vaga</button>
+            </div>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
