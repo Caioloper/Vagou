@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vagou conecta motoristas a vagas privadas disponíveis, aproximando pessoas de seus destinos."
+    />
+    <title>Vagou — Sua vaga livre. Seu destino mais perto.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+        <div class="container">
+          <a class="navbar-brand" href="#inicio" aria-label="Vagou, início">
+            <img src="assets/images/vagou-logo-simbolo.png" alt="" width="48" height="44" />
+            <span>Vag<span>ou</span></span>
+          </a>
+
+          <div class="nav-desktop ms-auto">
+            <a href="#beneficios">Benefícios</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#impacto">Impacto</a>
+            <a href="#faq">Dúvidas</a>
+            <a class="btn btn-outline-brand" href="#confianca">Por que confiar</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio">
+        <div class="container">
+          <div class="row align-items-center gy-5">
+            <div class="col-lg-6">
+              <p class="hero-kicker">Plataforma colaborativa de vagas privadas</p>
+              <h1>
+                Sua vaga livre.<br /><span>Seu destino<br />mais perto.</span>
+              </h1>
+              <p class="hero-copy">
+                O Vagou conecta motoristas a proprietários de vagas privadas que ficam desocupadas
+                em determinados horários. Encontre uma vaga perto de onde você precisa ir, compare
+                as opções e reserve antes de sair de casa.
+              </p>
+
+              <div class="hero-search-card" aria-label="Demonstração de busca de vagas">
+                <div class="hero-search-fields">
+                  <div class="hero-search-field hero-search-destination">
+                    <label for="destino">
+                      <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
+                        <circle cx="12" cy="10" r="2.5" />
+                      </svg>
+                      Destino
+                    </label>
+                    <input
+                      id="destino"
+                      type="text"
+                      placeholder="Bairro, rua ou ponto de referência"
+                    />
+                  </div>
+                  <div class="hero-search-field">
+                    <label for="data">
+                      <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <rect x="3" y="5" width="18" height="16" rx="2" />
+                        <path d="M16 3v4M8 3v4M3 10h18" />
+                      </svg>
+                      Data
+                    </label>
+                    <input id="data" type="text" placeholder="dd/mm/aaaa" />
+                  </div>
+                  <div class="hero-search-field">
+                    <label for="entrada">
+                      <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M12 7v5l3 2" />
+                      </svg>
+                      Entrada
+                    </label>
+                    <input id="entrada" type="text" value="09:00" />
+                  </div>
+                </div>
+                <div class="hero-search-action">
+                  <a
+                    class="hero-search-button"
+                    href="#como-funciona"
+                    aria-label="Ver como buscar vagas"
+                  >
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <circle cx="11" cy="11" r="7" />
+                      <path d="m20 20-4-4" />
+                    </svg>
+                    <span>Buscar vagas</span>
+                  </a>
+                  <p>
+                    Prévia da experiência. Preço, distância e disponibilidade aparecem antes da
+                    reserva.
+                  </p>
+                </div>
+              </div>
+
+              <div class="hero-trust" aria-label="Vantagens da plataforma">
+                <span>Mapa e lista de vagas</span>
+                <span>Preço total antes de confirmar</span>
+                <span>Instruções de acesso após a reserva</span>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <figure class="hero-media">
+                <img
+                  src="assets/images/estacionamento-aereo.webp"
+                  alt="Vista aérea noturna de um estacionamento urbano com diversos veículos"
+                />
+                <figcaption class="hero-stat-card">
+                  <strong>2,7<small>×</small></strong>
+                  <p>
+                    Trajetos não otimizados podem ser, em média, 2,7 vezes maiores que trajetos
+                    otimizados na busca por vaga.
+                  </p>
+                  <span>Paidi et al., 2022 · Sustainability</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits section-space" id="beneficios">
+        <div class="container">
+          <div class="section-heading text-center mx-auto">
+            <p class="eyebrow justify-content-center">Um espaço. Duas oportunidades.</p>
+            <h2>Uma conexão que faz a cidade se mover melhor</h2>
+            <p>
+              O Vagou aproxima quem precisa estacionar de quem tem uma vaga disponível — com clareza
+              para os dois lados.
+            </p>
+          </div>
+
+          <div class="row g-4 benefit-grid">
+            <div class="col-lg-6">
+              <article class="audience-card driver-card" id="para-motoristas">
+                <div class="audience-icon">
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="M5 17h14l-1-7-2-3H8l-2 3-1 7Z" />
+                    <path d="M3 12h2M19 12h2M7 17v3M17 17v3M8 13h.01M16 13h.01" />
+                  </svg>
+                </div>
+                <p class="card-label">Para quem dirige</p>
+                <h3>Chegue sabendo onde estacionar.</h3>
+                <p class="card-copy">
+                  Consulte opções próximas, compare informações e escolha a vaga que combina com o
+                  seu compromisso.
+                </p>
+                <ul class="feature-list">
+                  <li><span>01</span> Menos tempo procurando</li>
+                  <li><span>02</span> Preços e disponibilidade visíveis</li>
+                  <li><span>03</span> Mais previsibilidade na chegada</li>
+                </ul>
+                <a href="#como-funciona" class="text-link">
+                  Entenda a jornada
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </a>
+              </article>
+            </div>
+
+            <div class="col-lg-6">
+              <article class="audience-card owner-card" id="para-proprietarios">
+                <div class="audience-icon">
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="M4 20V9l8-5 8 5v11" />
+                    <path d="M8 20v-7h8v7M9 9h6" />
+                  </svg>
+                </div>
+                <p class="card-label">Para quem tem uma vaga</p>
+                <h3>Seu espaço pode gerar novas oportunidades.</h3>
+                <p class="card-copy">
+                  Disponibilize sua vaga nos períodos em que ela fica livre e acompanhe as reservas
+                  em um só lugar.
+                </p>
+                <ul class="feature-list">
+                  <li><span>01</span> Melhor uso de um espaço existente</li>
+                  <li><span>02</span> Disponibilidade definida por você</li>
+                  <li><span>03</span> Possibilidade de renda adicional</li>
+                </ul>
+                <a href="#confianca" class="text-link">
+                  Veja por que confiar
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works section-space" id="como-funciona">
+        <div class="container">
+          <div class="row align-items-end gy-3 how-header">
+            <div class="col-lg-6">
+              <p class="eyebrow eyebrow-light">Como funciona</p>
+              <h2>Do endereço ao estacionado,<br />em quatro passos.</h2>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+              <p class="section-intro">
+                A mesma plataforma atende quem procura uma vaga e quem tem um espaço para oferecer.
+              </p>
+            </div>
+          </div>
+
+          <div class="steps">
+            <article class="step-card">
+              <div class="step-number">01</div>
+              <h3>Busque o destino</h3>
+              <p>Informe onde você precisa estacionar, a data e o período de uso.</p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-number">02</div>
+              <h3>Compare as opções</h3>
+              <p>
+                Veja vagas próximas em mapa e lista, com distância, preço, fotos e regras de uso.
+              </p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-number">03</div>
+              <h3>Reserve</h3>
+              <p>Confira o período, o preço total e as condições antes de confirmar.</p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-number">04</div>
+              <h3>Estacione</h3>
+              <p>Receba a confirmação e as instruções de acesso ao espaço escolhido.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact section-space" id="impacto">
+        <div class="container">
+          <div class="row align-items-center g-5 impact-layout">
+            <div class="col-lg-6">
+              <p class="eyebrow">Cidade e sustentabilidade</p>
+              <h2>Uma vaga parada pode movimentar uma cidade.</h2>
+              <p class="impact-copy">
+                A falta de informação sobre vagas disponíveis não custa apenas tempo: gera
+                deslocamentos extras, mais combustível, mais trânsito e mais emissões. O Vagou
+                propõe usar melhor a infraestrutura que a cidade já tem, conectando oferta e
+                procura.
+              </p>
+
+              <div class="impact-pillars">
+                <article>
+                  <h3>Mobilidade</h3>
+                  <p>Menos circulação desnecessária procurando vaga.</p>
+                </article>
+                <article>
+                  <h3>Ambiente</h3>
+                  <p>Potencial redução de combustível e emissões.</p>
+                </article>
+                <article>
+                  <h3>Economia</h3>
+                  <p>Renda para quem tem espaço ocioso e preço comparável para quem usa.</p>
+                </article>
+              </div>
+
+              <p class="impact-ods">Relacionado aos ODS 11, 13 e 8</p>
+            </div>
+
+            <div class="col-lg-6">
+              <figure class="impact-photo">
+                <img
+                  src="assets/images/rua-sustentavel.webp"
+                  alt="Rua urbana arborizada, com edifícios residenciais e carros estacionados"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-section section-space" id="confianca">
+        <div class="container">
+          <div class="trust-heading">
+            <p class="eyebrow">Confiança</p>
+            <h2>Decidir com clareza, chegar sem dúvida.</h2>
+          </div>
+
+          <div class="trust-grid">
+            <article class="trust-card">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path
+                  d="m12 3 2 1.5 2.5-.2.8 2.4 2.2 1.3-.8 2.4.8 2.4-2.2 1.3-.8 2.4-2.5-.2-2 1.5-2-1.5-2.5.2-.8-2.4-2.2-1.3.8-2.4L4.5 8l2.2-1.3.8-2.4 2.5.2L12 3Z"
+                />
+                <path d="m9 11 2 2 4-4" />
+              </svg>
+              <h3>Informação completa</h3>
+              <p>Fotos, regras de uso e características do espaço aparecem antes de reservar.</p>
+            </article>
+
+            <article class="trust-card">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <rect x="5" y="3" width="14" height="18" rx="1" />
+                <path d="M9 8h6M9 16h6M12 6v12" />
+              </svg>
+              <h3>Preço sem surpresa</h3>
+              <p>Resumo da reserva e preço total exibidos antes da confirmação.</p>
+            </article>
+
+            <article class="trust-card">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <circle cx="15" cy="8" r="5" />
+                <path d="m11.5 11.5-8 8V21H6v-2h2v-2h2l2.5-2.5" />
+              </svg>
+              <h3>Acesso orientado</h3>
+              <p>Após a confirmação, você recebe as instruções para entrar no espaço.</p>
+            </article>
+
+            <article class="trust-card">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <circle cx="10" cy="5" r="2" />
+                <path d="M10 8v5l3 2M7 10H5l-2 4M13 10h4l2 3M10 13l-3 6M13 15l2 4" />
+              </svg>
+              <h3>Acessível por padrão</h3>
+              <p>Contraste adequado, rótulos nos campos, foco visível e navegação por teclado.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section section-space" id="faq">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-4">
+              <div class="faq-intro">
+                <p class="eyebrow">Perguntas frequentes</p>
+                <h2>O que costuma<br />gerar dúvida.</h2>
+                <p>
+                  Se a sua pergunta não estiver aqui, o projeto segue aberto a evoluir junto com os
+                  usuários nas próximas etapas.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-7 offset-lg-1">
+              <div class="faq-list">
+                <details>
+                  <summary>O Vagou é um estacionamento?</summary>
+                  <p>
+                    Não. O Vagou é uma plataforma colaborativa: ele conecta motoristas a
+                    proprietários que têm vagas privadas livres em determinados horários. Os espaços
+                    são de pessoas e estabelecimentos, não da plataforma.
+                  </p>
+                </details>
+
+                <details>
+                  <summary>Preciso pagar para procurar uma vaga?</summary>
+                  <p>
+                    A busca é aberta. Você visualiza as vagas disponíveis, compara preço, distância
+                    e horário, e só decide reservar depois de ver o resumo e o preço total.
+                  </p>
+                </details>
+
+                <details>
+                  <summary>Quem pode anunciar uma vaga?</summary>
+                  <p>
+                    Proprietários de garagens residenciais, comerciais ou privadas que ficam
+                    desocupadas durante parte do dia. É possível informar localização, fotos, preço
+                    e os horários em que o espaço está livre.
+                  </p>
+                </details>
+
+                <details>
+                  <summary>Como sei que a vaga estará livre quando eu chegar?</summary>
+                  <p>
+                    A disponibilidade é informada pelo proprietário no anúncio e confirmada na
+                    reserva. Depois da confirmação, você recebe as instruções de acesso ao espaço
+                    escolhido.
+                  </p>
+                </details>
+
+                <details>
+                  <summary>O Vagou substitui o estacionamento tradicional?</summary>
+                  <p>
+                    Não. A proposta é ampliar as opções usando o que a cidade já tem, aproveitando
+                    melhor vagas ociosas e reduzindo a circulação de quem procura um lugar para
+                    estacionar.
+                  </p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dual-cta" aria-labelledby="dual-cta-title">
+        <div class="container">
+          <div class="dual-cta-shell">
+            <div class="dual-cta-heading">
+              <p class="eyebrow">Um espaço. Duas possibilidades.</p>
+              <h2 id="dual-cta-title">Como o Vagou pode ajudar você?</h2>
+            </div>
+
+            <div class="dual-cta-options">
+              <article>
+                <span>Para motoristas</span>
+                <h3>Encontre uma vaga perto do seu destino.</h3>
+                <a class="btn btn-lime" href="#inicio">Quero encontrar uma vaga</a>
+              </article>
+
+              <article>
+                <span>Para proprietários</span>
+                <h3>Use melhor o espaço que fica livre.</h3>
+                <a class="btn btn-lime" href="#para-proprietarios">
+                  Quero disponibilizar uma vaga
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div>
+            <a
+              class="navbar-brand footer-brand"
+              href="#inicio"
+              aria-label="Vagou, voltar ao início"
+            >
+              <img src="assets/images/vagou-logo-simbolo.png" alt="" width="48" height="44" />
+              <span>Vag<span>ou</span></span>
+            </a>
+            <p>Sua vaga livre. Seu destino mais perto.</p>
+          </div>
+          <nav aria-label="Navegação do rodapé">
+            <a href="#beneficios">Benefícios</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#impacto">Impacto</a>
+            <a href="#confianca">Confiança</a>
+            <a href="#faq">Dúvidas</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <span>Projeto CitizenTech · Vagou</span>
+          <span>Mobilidade, conexão e melhor uso da cidade.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
