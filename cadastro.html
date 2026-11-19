@@ -44,7 +44,7 @@
             <span>Vag<span>ou</span></span>
           </a>
 
-          <a class="login-link" href="#login">Já tem conta? <strong>Entrar</strong></a>
+          <a class="login-link" href="index.html">Já tem conta? <strong>Voltar ao início</strong></a>
         </div>
       </nav>
     </header>
@@ -84,7 +84,7 @@
                 Preencha seus dados básicos. Você pode alterar seu perfil depois.
               </p>
 
-              <form id="signup-form" action="#" method="post">
+              <form id="signup-form" action="resultados-detalhes.html" method="get">
                 <fieldset class="profile-picker">
                   <legend>Como você quer usar o Vagou?</legend>
                   <div class="profile-options">
@@ -200,5 +200,23 @@
       </div>
     </main>
 
+    <script>
+      const signupForm = document.querySelector("#signup-form");
+
+      signupForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        if (!signupForm.checkValidity()) {
+          signupForm.reportValidity();
+          return;
+        }
+
+        const profile = signupForm.elements.profile.value;
+        window.location.href =
+          profile === "proprietario"
+            ? "cadastro-proprietario.html"
+            : "resultados-detalhes.html";
+      });
+    </script>
   </body>
 </html>

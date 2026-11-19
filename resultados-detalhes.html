@@ -21,6 +21,7 @@
 
     <!-- CSS original do projeto -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resultados.css">
 </head>
 
 <body class="pagina-resultados"> 
@@ -38,11 +39,10 @@
 
                 <div class="nav-desktop ms-auto">
                     <a href="index.html#beneficios">Benefícios</a>
-                    <a href="index.html#como-funciona">Como funciona</a>
-                    <a href="index.html#impacto">Impacto</a>
-                    <a href="index.html#faq">Dúvidas</a>
+                    <a href="#detalhes-vaga">Detalhes</a>
+                    <a href="cadastro.html">Criar conta</a>
                     <a class="btn btn-outline-brand"
-                        href="index.html#confianca">Por que confiar</a>
+                        href="cadastro-proprietario.html">Anunciar vaga</a>
                 </div>
 
             </div>
@@ -83,13 +83,13 @@
                 <input type="time" id="horario">
             </div>
 
-            <button type="button" class="btn-buscar">
+            <button type="button" class="btn-buscar" onclick="document.querySelector('.resultados-conteudo').scrollIntoView({behavior: 'smooth'})">
                 Buscar vagas
             </button>
 
         </div>
 
-        <div class="resultados-conteudo">
+        <div class="resultados-conteudo" id="resultados-disponiveis">
 
             <div class="resultados-titulo">
                 <h2>Vagas disponíveis</h2>
@@ -99,8 +99,6 @@
             <div class="resultados-layout">
 
                 <div class="lista-vagas">
-                    
-<div class="lista-vagas">
 
     <article class="vaga-card">
 
@@ -131,9 +129,9 @@
                     <small>/ hora</small>
                 </div>
 
-                <button type="button" class="btn-detalhes">
+                <a class="btn-detalhes" href="#detalhes-vaga">
                     Ver detalhes
-                </button>
+                </a>
             </div>
 
         </div>
@@ -168,16 +166,15 @@
                     <small>/ hora</small>
                 </div>
 
-                <button type="button" class="btn-detalhes">
+                <a class="btn-detalhes" href="#detalhes-vaga">
                     Ver detalhes
-                </button>
+                </a>
             </div>
 
         </div>
     </article>
 
 </div>
-                </div>
 
                 <div class="mapa-vagas">
     <img src="assets/images/mapa-vagou.png" alt="Mapa ilustrativo de vagas de estacionamento">
@@ -254,13 +251,14 @@
                     <strong>R$ 12,00</strong>
                 </div>
 
-                <button type="button" class="btn-reservar">
+                <a class="btn-reservar" href="cadastro.html">
                     Reservar vaga
-                </button>
+                </a>
             </div>
 
         </div>
     </div>
+</div>
 </section>
 <!-- FIM DOS DETALHES DA VAGA -->
     </main>

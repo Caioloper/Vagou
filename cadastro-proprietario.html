@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastre sua vaga privada no Vagou.">
     <title>Vagou | Cadastrar minha vaga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/proprietario.css">
 </head>
 
 <body class="pagina-cadastro">
@@ -13,11 +19,14 @@
     <header class="cadastro-header">
         <div class="cadastro-nav">
             <a href="index.html" class="cadastro-logo">
-                <img src="assets/images/vagou-logo-simbolo.png" alt="Vagou">
+                <img src="assets/images/vagou-logo-simbolo-sem_fundo.png" alt="Vagou">
                 <strong>Vagou</strong>
             </a>
 
-            <a href="index.html" class="voltar-inicio">Voltar ao início</a>
+            <div class="cadastro-nav-actions">
+                <a href="resultados-detalhes.html" class="voltar-inicio">Buscar vagas</a>
+                <a href="cadastro.html" class="voltar-inicio">Criar conta</a>
+            </div>
         </div>
     </header>
 
@@ -32,7 +41,7 @@
             </p>
         </section>
 
-        <form class="formulario-vaga">
+        <form class="formulario-vaga" action="resultados-detalhes.html" method="get">
 
             <div class="formulario-titulo">
                 <h2>Informações da vaga</h2>

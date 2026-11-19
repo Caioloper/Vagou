@@ -1,0 +1,455 @@
+.pagina-resultados .site-header {
+  position: relative;
+}
+
+.pagina-resultados .resultados-section {
+  min-height: 100svh;
+  padding: 4rem 0 5rem;
+  background: var(--color-surface);
+}
+
+.pagina-resultados .resultados-header {
+  margin-bottom: 2rem;
+}
+
+.pagina-resultados .section-tag {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  color: var(--color-accent-dark);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.pagina-resultados .resultados-header h1,
+.pagina-resultados .detalhes-cabecalho h2 {
+  color: var(--color-primary);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.pagina-resultados .resultados-header h1 {
+  margin-bottom: 0.8rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.pagina-resultados .resultados-header p,
+.pagina-resultados .detalhes-cabecalho p,
+.pagina-resultados .vaga-endereco,
+.pagina-resultados .vaga-regra {
+  color: var(--color-muted);
+}
+
+.pagina-resultados .busca-vagas {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.pagina-resultados .campo-busca {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pagina-resultados .campo-busca label {
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.pagina-resultados .campo-busca input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.75rem;
+  color: var(--color-primary);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-family: inherit;
+  outline: 0;
+}
+
+.pagina-resultados .campo-busca input:focus {
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 3px rgba(0, 92, 117, 0.12);
+}
+
+.pagina-resultados .btn-buscar,
+.pagina-resultados .btn-detalhes {
+  min-height: 48px;
+  padding: 0.75rem 1.25rem;
+  color: var(--color-white);
+  background: var(--color-primary);
+  border: 0;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.pagina-resultados .btn-detalhes,
+.pagina-resultados .btn-reservar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.pagina-resultados .btn-buscar:hover,
+.pagina-resultados .btn-detalhes:hover {
+  background: var(--color-secondary);
+  transform: translateY(-1px);
+}
+
+.pagina-resultados .resultados-titulo {
+  margin-bottom: 1.5rem;
+}
+
+.pagina-resultados .resultados-titulo h2 {
+  margin-bottom: 0.25rem;
+  color: var(--color-primary);
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.pagina-resultados .resultados-titulo p {
+  color: var(--color-muted);
+}
+
+.pagina-resultados .resultados-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1.5rem;
+}
+
+.pagina-resultados .lista-vagas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.pagina-resultados .vaga-card {
+  display: grid;
+  grid-template-columns: 185px 1fr;
+  overflow: hidden;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.pagina-resultados .vaga-foto {
+  position: relative;
+  display: flex;
+  min-height: 220px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagina-resultados .foto-vaga-1 {
+  background: linear-gradient(135deg, #dce9df, #a8c6b1);
+}
+
+.pagina-resultados .foto-vaga-2 {
+  background: linear-gradient(135deg, #dce5ed, #a8bdcf);
+}
+
+.pagina-resultados .vaga-icone {
+  color: var(--color-primary);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.pagina-resultados .vaga-status {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 5px 12px;
+  color: var(--color-primary);
+  background: var(--color-accent);
+  border-radius: 999px;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+}
+
+.pagina-resultados .vaga-info {
+  min-width: 0;
+  padding: 1.2rem;
+}
+
+.pagina-resultados .vaga-topo,
+.pagina-resultados .vaga-rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pagina-resultados .vaga-topo h3 {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.pagina-resultados .vaga-avaliacao,
+.pagina-resultados .detalhes-nota {
+  color: #a16b00;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.pagina-resultados .vaga-endereco,
+.pagina-resultados .vaga-regra {
+  margin: 0.5rem 0;
+  font-size: var(--font-size-sm);
+}
+
+.pagina-resultados .vaga-detalhes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 1rem 0;
+  color: var(--color-primary);
+  font-size: var(--font-size-xs);
+}
+
+.pagina-resultados .vaga-rodape {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.pagina-resultados .vaga-rodape strong {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+}
+
+.pagina-resultados .vaga-rodape small {
+  color: var(--color-muted);
+}
+
+.pagina-resultados .mapa-vagas {
+  min-height: 350px;
+  overflow: hidden;
+  background: #eaf0ed;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.pagina-resultados .mapa-vagas img {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  object-fit: cover;
+}
+
+.pagina-resultados .detalhes-vaga {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.pagina-resultados .detalhes-cabecalho {
+  margin-bottom: 1.5rem;
+}
+
+.pagina-resultados .detalhes-cabecalho h2 {
+  font-size: 2rem;
+}
+
+.pagina-resultados .detalhes-card {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  overflow: hidden;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.pagina-resultados .detalhes-imagem {
+  display: flex;
+  min-height: 400px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  color: var(--color-white);
+  background:
+    linear-gradient(rgba(11, 31, 53, 0.65), rgba(0, 92, 117, 0.75)),
+    url("../assets/images/estacionamento-aereo.webp") center / cover no-repeat;
+}
+
+.pagina-resultados .detalhes-imagem span {
+  width: fit-content;
+  padding: 8px 14px;
+  color: var(--color-primary);
+  background: var(--color-accent);
+  border-radius: 999px;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+}
+
+.pagina-resultados .detalhes-imagem strong {
+  max-width: 300px;
+  font-size: 1.8rem;
+}
+
+.pagina-resultados .detalhes-informacoes {
+  padding: 2rem;
+}
+
+.pagina-resultados .detalhes-titulo {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pagina-resultados .detalhes-titulo h3 {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+}
+
+.pagina-resultados .detalhes-titulo p,
+.pagina-resultados .detalhes-informacoes p {
+  color: var(--color-muted);
+}
+
+.pagina-resultados .detalhes-caracteristicas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+  border-block: 1px solid var(--color-border);
+}
+
+.pagina-resultados .detalhes-caracteristicas div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pagina-resultados .detalhes-caracteristicas strong {
+  color: var(--color-primary);
+  font-size: 0.9rem;
+}
+
+.pagina-resultados .detalhes-caracteristicas small,
+.pagina-resultados .detalhes-preco small {
+  color: var(--color-muted);
+  font-size: var(--font-size-xs);
+}
+
+.pagina-resultados .detalhes-informacoes h4 {
+  margin: 1.2rem 0 0.5rem;
+  color: var(--color-primary);
+}
+
+.pagina-resultados .detalhes-informacoes ul {
+  padding-left: 1.2rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.pagina-resultados .detalhes-preco {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.pagina-resultados .detalhes-preco div {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagina-resultados .detalhes-preco strong {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+}
+
+.pagina-resultados .btn-reservar {
+  padding: 0.9rem 1.3rem;
+  color: var(--color-primary);
+  background: var(--color-accent);
+  border: 0;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pagina-resultados .btn-reservar:hover {
+  background: var(--color-accent-dark);
+}
+
+@media (max-width: 991.98px) {
+  .pagina-resultados .busca-vagas,
+  .pagina-resultados .resultados-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .pagina-resultados .detalhes-card {
+    grid-template-columns: 1fr;
+  }
+
+  .pagina-resultados .detalhes-imagem {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .pagina-resultados .resultados-section {
+    padding: 2rem 0;
+  }
+
+  .pagina-resultados .busca-vagas {
+    padding: 1rem;
+  }
+
+  .pagina-resultados .vaga-card {
+    grid-template-columns: 1fr;
+  }
+
+  .pagina-resultados .vaga-foto {
+    min-height: 180px;
+  }
+
+  .pagina-resultados .detalhes-vaga {
+    padding-inline: 1rem;
+  }
+
+  .pagina-resultados .detalhes-informacoes,
+  .pagina-resultados .detalhes-imagem {
+    padding: 1.25rem;
+  }
+
+  .pagina-resultados .detalhes-caracteristicas,
+  .pagina-resultados .detalhes-preco {
+    grid-template-columns: 1fr;
+  }
+
+  .pagina-resultados .detalhes-preco,
+  .pagina-resultados .vaga-rodape {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .pagina-resultados .btn-reservar,
+  .pagina-resultados .btn-detalhes {
+    width: 100%;
+  }
+}
