@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Esta funcionalidade do Vagou está em desenvolvimento."
+    />
+    <link rel="icon" href="./assets/images/favicon/favicon.ico" sizes="any" />
+    <title>Em desenvolvimento — Vagou</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/desenvolvimento.css" />
+  </head>
+  <body class="pagina-desenvolvimento">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" aria-label="Vagou, início">
+            <img
+              src="assets/images/vagou-logo-simbolo-sem_fundo.png"
+              alt=""
+              width="52"
+              height="52"
+            />
+            <span>Vag<span>ou</span></span>
+          </a>
+
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileNavigation"
+            aria-controls="mobileNavigation"
+            aria-label="Abrir menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="nav-desktop d-none d-lg-flex ms-auto">
+            <a href="index.html#beneficios">Benefícios</a>
+            <a href="index.html#como-funciona">Como funciona</a>
+            <a href="index.html#impacto">Impacto</a>
+            <a href="index.html#faq">Dúvidas</a>
+            <a href="resultados-detalhes.html">Buscar vagas</a>
+            <a class="btn btn-outline-brand" href="cadastro-proprietario.html">
+              Anuncie suas vagas
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      class="offcanvas offcanvas-end d-lg-none"
+      tabindex="-1"
+      id="mobileNavigation"
+      aria-labelledby="mobileNavigationLabel"
+    >
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title" id="mobileNavigationLabel">Menu</h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Fechar menu"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <nav class="mobile-navigation" aria-label="Navegação mobile">
+          <a href="index.html#beneficios">Benefícios</a>
+          <a href="index.html#como-funciona">Como funciona</a>
+          <a href="index.html#impacto">Impacto</a>
+          <a href="index.html#faq">Dúvidas</a>
+          <a href="resultados-detalhes.html">Buscar vagas</a>
+          <a class="btn btn-lime" href="cadastro-proprietario.html">
+            Anuncie suas vagas
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <main id="conteudo" class="desenvolvimento-main">
+      <section class="desenvolvimento-card" aria-labelledby="desenvolvimento-titulo">
+        <div class="desenvolvimento-icone" aria-hidden="true">🚧</div>
+        <span class="section-tag">NOVIDADE A CAMINHO</span>
+        <h1 id="desenvolvimento-titulo">Estamos preparando tudo para você.</h1>
+        <p>
+          Essa funcionalidade ainda está em desenvolvimento, mas logo estará disponível
+          para tornar sua experiência no Vagou ainda mais simples.
+        </p>
+        <div class="desenvolvimento-acoes">
+          <a class="btn btn-lime" href="index.html">Voltar ao início</a>
+          <a class="btn btn-outline-brand" href="resultados-detalhes.html">Continuar buscando</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

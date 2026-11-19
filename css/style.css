@@ -418,9 +418,12 @@ a {
 }
 
 .hero-search-button:hover {
-  color: var(--color-white);
+  /* color: var(--color-white);
   background: var(--color-primary);
-  transform: translateY(-2px);
+  transform: translateY(-2px); */
+  color: var(--color-white);
+  border-color: var(--color-accent-dark);
+  background: var(--color-accent-dark);
 }
 
 .hero-trust {

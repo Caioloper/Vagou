@@ -390,9 +390,13 @@
   border-radius: 8px;
   font-weight: 700;
   cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .pagina-resultados .btn-reservar:hover {
+  /* background: var(--color-accent-dark); */
+  color: var(--color-white);
+  border-color: var(--color-accent-dark);
   background: var(--color-accent-dark);
 }
 

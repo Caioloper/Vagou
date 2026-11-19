@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cadastre sua vaga privada no Vagou.">
+    <link rel="icon" href="./assets/images/favicon/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
+    
     <title>Vagou | Cadastrar minha vaga</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,21 +21,28 @@
 
 <body class="pagina-cadastro">
 
-    <header class="cadastro-header">
-        <div class="cadastro-nav">
-            <a href="index.html" class="cadastro-logo">
-                <img src="assets/images/vagou-logo-simbolo-sem_fundo.png" alt="Vagou">
-                <strong>Vagou</strong>
-            </a>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegação principal">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" aria-label="Vagou, início">
+                    <img
+                        src="assets/images/vagou-logo-simbolo-sem_fundo.png"
+                        alt=""
+                        width="52"
+                        height="52"
+                    />
+                    <span>Vag<span>ou</span></span>
+                </a>
 
-            <div class="cadastro-nav-actions">
-                <a href="resultados-detalhes.html" class="voltar-inicio">Buscar vagas</a>
-                <a href="cadastro.html" class="voltar-inicio">Criar conta</a>
+                <div class="proprietario-header-links">
+                    <a href="resultados-detalhes.html">Buscar vagas</a>
+                    <a href="cadastro.html">Criar conta</a>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <main class="cadastro-main">
+    <main class="cadastro-main" id="conteudo">
 
         <section class="cadastro-intro">
             <span class="section-tag">SEJA UM PARCEIRO VAGOU</span>
@@ -41,7 +53,7 @@
             </p>
         </section>
 
-        <form class="formulario-vaga" action="resultados-detalhes.html" method="get">
+        <form class="formulario-vaga" action="em-desenvolvimento.html" method="get">
 
             <div class="formulario-titulo">
                 <h2>Informações da vaga</h2>
