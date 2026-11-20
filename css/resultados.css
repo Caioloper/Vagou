@@ -168,6 +168,10 @@
   font-weight: 800;
 }
 
+.pagina-resultados .vaga-icone i {
+  font-size: inherit;
+}
+
 .pagina-resultados .vaga-status {
   position: absolute;
   top: 12px;

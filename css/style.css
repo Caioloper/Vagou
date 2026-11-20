@@ -342,14 +342,11 @@ a {
   text-transform: uppercase;
 }
 
-.hero-search-field label svg {
+.hero-search-field label i {
   width: 14px;
-  height: 14px;
-  fill: none;
-  stroke: var(--color-secondary);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.7;
+  color: var(--color-secondary);
+  font-size: 0.875rem;
+  line-height: 1;
 }
 
 .hero-search-field input {
@@ -408,13 +405,10 @@ a {
     transform 0.2s ease;
 }
 
-.hero-search-button svg {
+.hero-search-button i {
   width: 16px;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.8;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .hero-search-button:hover {
@@ -583,13 +577,10 @@ a {
   color: var(--color-accent-dark);
 }
 
-.audience-icon svg {
+.audience-icon i {
   width: 27px;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.7;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 .card-label {
@@ -667,17 +658,14 @@ a {
   text-decoration: none;
 }
 
-.text-link svg {
+.text-link i {
   width: 18px;
-  fill: none;
-  stroke: var(--color-accent-dark);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
+  color: var(--color-accent-dark);
+  line-height: 1;
   transition: transform 0.2s ease;
 }
 
-.text-link:hover svg {
+.text-link:hover i {
   transform: translateX(4px);
 }
 
@@ -863,15 +851,12 @@ a {
   transform: translateY(-4px);
 }
 
-.trust-card svg {
+.trust-card i {
   width: 22px;
-  height: 22px;
   margin-bottom: 1.25rem;
-  fill: none;
-  stroke: var(--color-secondary);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.7;
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 .trust-card h3 {
