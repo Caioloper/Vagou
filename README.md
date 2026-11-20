@@ -101,6 +101,10 @@ Como o projeto é estático, basta abrir `index.html` em um navegador
 
 A interface utiliza HTML semântico, rótulos associados aos campos, textos alternativos em imagens, foco visível, navegação por teclado, link para pular ao conteúdo e menu responsivo. A identidade visual usa a fonte Poppins e uma paleta com azul escuro, verde de destaque e superfícies claras.
 
+## Vídeo Pitch
+
+https://www.youtube.com/watch?v=OV5gsfV5q8Y
+
 ## Equipe
 
 Projeto FIAP — Web Design:
